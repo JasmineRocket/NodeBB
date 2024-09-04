@@ -31,7 +31,7 @@ module.exports = function (Groups) {
 				values[prop] = values[prop] === 'true' || parseInt(values[prop], 10) === 1;
 			}
 		});
-		
+
 		const payload = payload_helper(values);
 
 		if (values.hasOwnProperty('disableJoinRequests')) {
@@ -69,7 +69,7 @@ module.exports = function (Groups) {
 		});
 	};
 
-	function payload_helper(values){
+	function payload_helper(values) {
 		const payload = {
 			description: values.description || '',
 			icon: values.icon || '',
@@ -92,8 +92,7 @@ module.exports = function (Groups) {
 		if (values.hasOwnProperty('private')) {
 			payload.private = values.private ? '1' : '0';
 		}
-		return payload
-
+		return payload;
 	}
 
 
