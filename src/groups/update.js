@@ -47,7 +47,7 @@ module.exports = function (Groups) {
 		}
 
 		if (values.hasOwnProperty('private')) {
-			console.log("JASMINE_SHI");
+			console.log('JASMINE_SHI');
 			await updatePrivacy(groupName, values.private);
 		}
 
